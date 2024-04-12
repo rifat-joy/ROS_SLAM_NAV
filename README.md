@@ -4,6 +4,7 @@
 ```
 cd ~/catkin_ws/src/
 git clone https://github.com/phonght32/ros-slam-nav
+# unzip
 cd catkin_ws
 catkin_make
 ```
@@ -38,49 +39,7 @@ Open a new terminal and run the Navigation node.
 roslaunch robot_navigation robot_navigation.launch
 ``` 
  
-### 3. SLAM
-Run roscore from remote PC. 
-```
-roscore 
-```
- 
-Open a new terminal from Single Board Computer (SBC) on the robot and launch the Bringup. 
-```
-roslaunch robot_bringup robot.launch
-```
 
-Open a new terminal from remote PC and launch the SLAM node. 
-```
-roslaunch robot_slam robot_slam.launch
-```
-Run the teleoperation node to control the robot. 
-```
-roslaunch robot_teleop robot_teleop_key.launch 
-```
-Save the map. 
-```
-rosrun map_server map_saver -f ~/map
-```
- 
-### 4. Navigation
-Run roscore from remote PC. 
-```
-roscore 
-```
- 
-Open a new terminal from Single Board Computer (SBC) on the robot and launch the Bringup. 
-```
-roslaunch robot_bringup robot.launch
-```
-
-Open a new terminal from remote PC and launch the Navigation node. 
-```
-roslaunch robot_navigation robot_navigation.launch
-```
-
-### 5. Problem
-For any problem, please report to [Issues](https://github.com/phonght32/ros-slam-nav/issues) or contact email thanhphongho1998@gmail.com 
- 
  
  
 
