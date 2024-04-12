@@ -2,9 +2,10 @@
 
 ### 1. Installation
 ```
-cd ~/catkin_ws/src/
 git clone https://github.com/rifat-joy/ROS_SLAM_NAV.git
-# unzip
+# unzip robot_simulations
+cd ~/catkin_ws/src/
+# copy the unzip file here
 cd catkin_ws
 catkin_make
 ```
